@@ -1,4 +1,4 @@
-# 🏗️ FTRT Cosmic Evolution Explorer - Estructura del Proyecto
+🏗️ FTRT Cosmic Evolution Explorer - Estructura del Proyecto
 
 ## 📁 Árbol de Directorios
 
@@ -104,5 +104,3 @@ FTRT-Cosmic-Evolution-Explorer/
 7. Configurar CI/CD pipeline
 
 ---
-
-**¿Qué archivo quieres que cree primero, Maestro?**
