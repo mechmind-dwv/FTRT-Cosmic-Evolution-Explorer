@@ -1,0 +1,92 @@
+/**
+ * FTRT Cosmic Evolution Explorer
+ * Global Styles with Tailwind CSS
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Cosmic Theme Variables */
+:root {
+  --cosmic-purple: #8b5cf6;
+  --stellar-blue: #3b82f6;
+  --solar-yellow: #fbbf24;
+  --nebula-pink: #ec4899;
+  --void-black: #000000;
+  --starlight-white: #f3f4f6;
+  --deep-space: #0a0a0f;
+  --meteor-gray: #1f2937;
+}
+
+/* Base Styles */
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    @apply antialiased;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-black text-white font-sans;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-purple-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-purple-500;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  .cosmic-card {
+    @apply bg-gray-900 border border-gray-700 rounded-lg p-6 transition-all duration-300;
+  }
+
+  .cosmic-card:hover {
+    @apply border-purple-500 shadow-lg shadow-purple-500/20;
+  }
+
+  .btn-primary {
+    @apply bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-200;
+  }
+
+  .loading-spinner {
+    width: 48px;
+    height: 48px;
+    border: 5px solid rgba(139, 92, 246, 0.3);
+    border-top-color: #8b5cf6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+}
+
+/* Utility Styles */
+@layer utilities {
+  .text-gradient-cosmic {
+    @apply bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent;
+  }
+}
