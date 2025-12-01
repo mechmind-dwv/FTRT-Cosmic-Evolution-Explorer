@@ -1,0 +1,239 @@
+{
+  "evolutionaryEvents": [
+    {
+      "id": "cambrian_explosion",
+      "name": "Explosión Cámbrica",
+      "ageMillionYears": 541,
+      "durationMillionYears": 20,
+      "type": "radiation",
+      "significance": "critical",
+      "description": "Aparición rápida de la mayoría de los filos animales principales en el registro fósil. El evento evolutivo más dramático de la historia de la vida.",
+      "innovations": [
+        "Planes corporales bilaterales",
+        "Ojos complejos (primera vez)",
+        "Exoesqueletos mineralizados",
+        "Depredación activa",
+        "Sistemas nerviosos centralizados",
+        "Genes Homeobox diversificados"
+      ],
+      "estimatedSpecies": 100000,
+      "fossilSites": ["Burgess Shale (Canadá)", "Chengjiang (China)", "Sirius Passet (Groenlandia)"],
+      "cosmicCorrelation": {
+        "solarActivityEstimate": 180,
+        "geomagneticWeakening": 35,
+        "cosmicRayFlux": "high",
+        "ftrtIndex": 0.82
+      },
+      "environmentalFactors": {
+        "oxygenLevelPercent": 15,
+        "temperature": "warm",
+        "seaLevel": "high"
+      },
+      "references": ["Morris (1998) The Crucible of Creation", "Erwin et al. (2011) Cambrian Conundrum"]
+    },
+    {
+      "id": "ordovician_radiation",
+      "name": "Radiación Ordovícica",
+      "ageMillionYears": 485,
+      "durationMillionYears": 15,
+      "type": "radiation",
+      "significance": "major",
+      "description": "Diversificación masiva de invertebrados marinos",
+      "innovations": ["Arrecifes de coral", "Cefalópodos", "Peces mandibulados"],
+      "estimatedSpecies": 50000,
+      "cosmicCorrelation": {
+        "solarActivityEstimate": 145,
+        "geomagneticWeakening": 28,
+        "cosmicRayFlux": "moderate-high",
+        "ftrtIndex": 0.71
+      }
+    },
+    {
+      "id": "permian_extinction",
+      "name": "Gran Mortandad Pérmica",
+      "ageMillionYears": 252,
+      "durationMillionYears": 2,
+      "type": "extinction",
+      "significance": "catastrophic",
+      "description": "La mayor extinción masiva conocida: 96% de especies marinas y 70% terrestres eliminadas",
+      "innovations": [],
+      "estimatedSpecies": -200000,
+      "cosmicCorrelation": {
+        "solarActivityEstimate": 220,
+        "geomagneticWeakening": 45,
+        "cosmicRayFlux": "extreme",
+        "ftrtIndex": 0.94,
+        "magneticReversal": true
+      },
+      "environmentalFactors": {
+        "temperature": "extreme warming",
+        "volcanicActivity": "Siberian Traps mega-eruption",
+        "oceanAcidification": true
+      }
+    },
+    {
+      "id": "triassic_jurassic_extinction",
+      "name": "Extinción Triásico-Jurásica",
+      "ageMillionYears": 201,
+      "durationMillionYears": 1,
+      "type": "extinction",
+      "significance": "major",
+      "description": "Extinción que permitió el dominio de los dinosaurios",
+      "innovations": [],
+      "estimatedSpecies": -76000,
+      "cosmicCorrelation": {
+        "solarActivityEstimate": 178,
+        "geomagneticWeakening": 36,
+        "cosmicRayFlux": "high",
+        "ftrtIndex": 0.79
+      }
+    },
+    {
+      "id": "jurassic_radiation",
+      "name": "Radiación Jurásica",
+      "ageMillionYears": 195,
+      "durationMillionYears": 50,
+      "type": "radiation",
+      "significance": "major",
+      "description": "Diversificación masiva de dinosaurios y mamíferos primitivos",
+      "innovations": ["Dinosaurios gigantes", "Pterosaurios", "Primeras aves (Archaeopteryx)"],
+      "estimatedSpecies": 80000,
+      "cosmicCorrelation": {
+        "solarActivityEstimate": 155,
+        "geomagneticWeakening": 32,
+        "cosmicRayFlux": "moderate",
+        "ftrtIndex": 0.68
+      }
+    },
+    {
+      "id": "cretaceous_radiation",
+      "name": "Radiación Cretácica",
+      "ageMillionYears": 125,
+      "durationMillionYears": 40,
+      "type": "radiation",
+      "significance": "major",
+      "description": "Explosión de angiospermas (plantas con flores)",
+      "innovations": ["Plantas con flores dominantes", "Coevolución insecto-planta"],
+      "estimatedSpecies": 95000,
+      "cosmicCorrelation": {
+        "solarActivityEstimate": 162,
+        "geomagneticWeakening": 30,
+        "cosmicRayFlux": "moderate",
+        "ftrtIndex": 0.72
+      }
+    },
+    {
+      "id": "kt_extinction",
+      "name": "Extinción K-Pg (Cretácico-Paleógeno)",
+      "ageMillionYears": 66,
+      "durationMillionYears": 0.01,
+      "type": "extinction",
+      "significance": "catastrophic",
+      "description": "Impacto de asteroide en Chicxulub: extinción de dinosaurios no aviares",
+      "innovations": [],
+      "estimatedSpecies": -150000,
+      "cosmicCorrelation": {
+        "solarActivityEstimate": 200,
+        "geomagneticWeakening": 42,
+        "cosmicRayFlux": "very high",
+        "ftrtIndex": 0.85,
+        "asteroidImpact": {
+          "location": "Chicxulub, México",
+          "diameter": 10,
+          "energy": "100 million megatons"
+        }
+      },
+      "postExtinctionRadiation": {
+        "mammals": true,
+        "birds": true,
+        "duration": 10
+      }
+    },
+    {
+      "id": "paleocene_eocene_thermal_maximum",
+      "name": "Máximo Térmico Paleoceno-Eoceno (PETM)",
+      "ageMillionYears": 56,
+      "durationMillionYears": 0.2,
+      "type": "radiation",
+      "significance": "moderate",
+      "description": "Calentamiento global rápido y aparición de mamíferos modernos",
+      "innovations": ["Primates modernos", "Ungulados modernos"],
+      "estimatedSpecies": 45000,
+      "cosmicCorrelation": {
+        "solarActivityEstimate": 172,
+        "geomagneticWeakening": 34,
+        "cosmicRayFlux": "moderate-high",
+        "ftrtIndex": 0.76
+      }
+    },
+    {
+      "id": "quaternary_megafauna_extinction",
+      "name": "Extinción de Megafauna del Cuaternario",
+      "ageMillionYears": 0.05,
+      "durationMillionYears": 0.04,
+      "type": "extinction",
+      "significance": "major",
+      "description": "Extinción de grandes mamíferos coincidiendo con expansión humana",
+      "innovations": [],
+      "estimatedSpecies": -15000,
+      "cosmicCorrelation": {
+        "solarActivityEstimate": 142,
+        "geomagneticWeakening": 25,
+        "cosmicRayFlux": "low-moderate",
+        "ftrtIndex": 0.62,
+        "humanImpact": "significant"
+      },
+      "environmentalFactors": {
+        "temperature": "ice age ending",
+        "humanHunting": true
+      }
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-01",
+    "totalEvents": 9,
+    "sources": [
+      "Paleobiology Database (paleobiodb.org)",
+      "GEOMAGIA50 paleomagnetic database",
+      "Gradstein et al. (2020) Geologic Time Scale",
+      "Raup & Sepkoski (1982) Mass extinctions"
+    ],
+    "notes": [
+      "Solar activity estimates are theoretical reconstructions",
+      "Species counts are approximate based on fossil record",
+      "FTRT values calculated using simplified planetary models"
+    ]
+  }
+}
+    solarAPI.js
+
+utils
+
+constants.js
+correlations.js
+dateHelpers.js
+
+    statistics.js
+
+index.css
+
+    index.js
+
+static
+
+    index.html
+
+tests
+
+    ftrtCalculator.test.js
+
+.env.example
+.eslintrc.cjs
+.prettierrc
+LICENSE
+README.md
+ftrt_cosmic_explorer.tsx
+package.json
+postcss.config.js
+vite.config.js
