@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>FTRT Cosmic Evolution Explorer | Exploring Cosmic Forces & Evolution</title>
+  <meta name="title" content="FTRT Cosmic Evolution Explorer" />
+  <meta name="description" content="Exploring correlations between planetary tidal forces, solar activity, geomagnetic perturbations, and evolutionary events on Earth. A radical framework connecting celestial mechanics to biological evolution." />
+  <meta name="keywords" content="FTRT, cosmic evolution, solar activity, geomagnetic field, cambrian explosion, astrobiology, heliobiology, evolution, planetary forces" />
+  <meta name="author" content="MECHMIND-DWV" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ftrt-explorer.vercel.app/" />
+  <meta property="og:title" content="FTRT Cosmic Evolution Explorer" />
+  <meta property="og:description" content="Exploring how planetary alignments, solar storms, and geomagnetic fluctuations influence biological evolution on Earth." />
+  <meta property="og:image" content="/og-image.png" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://ftrt-explorer.vercel.app/" />
+  <meta property="twitter:title" content="FTRT Cosmic Evolution Explorer" />
+  <meta property="twitter:description" content="Exploring how planetary alignments, solar storms, and geomagnetic fluctuations influence biological evolution on Earth." />
+  <meta property="twitter:image" content="/twitter-image.png" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  
+  <!-- Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#8b5cf6" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" as="style" href="/src/index.css" />
+  
+  <!-- Inline critical CSS for faster initial render -->
+  <style>
+    /* Critical CSS */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+    
+    #root {
+      min-height: 100vh;
+      width: 100%;
+    }
+    
+    /* Loading screen */
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, #000000 0%, #1a1a2e 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    
+    .loading-spinner {
+      width: 64px;
+      height: 64px;
+      border: 6px solid rgba(139, 92, 246, 0.3);
+      border-top-color: #8b5cf6;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .loading-text {
+      margin-top: 24px;
+      font-size: 18px;
+      color: #a78bfa;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    
+    .loading-subtext {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Screen (will be hidden when React mounts) -->
+  <div id="loading" class="loading-screen">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">⚡ FTRT Cosmic Evolution Explorer ⚡</div>
+    <div class="loading-subtext">Initializing cosmic data streams...</div>
+  </div>
+  
+  <!-- React Root -->
+  <div id="root"></div>
+  
+  <!-- Module Script -->
+  <script type="module" src="/src/index.js"></script>
+  
+  <!-- Hide loading screen when content loads -->
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const loading = document.getElementById('loading');
+        if (loading) {
+          loading.style.opacity = '0';
+          loading.style.transition = 'opacity 0.5s ease-out';
+          setTimeout(() => {
+            loading.style.display = 'none';
+          }, 500);
+        }
+      }, 1000);
+    });
+  </script>
+  
+  <!-- Analytics (optional - uncomment when ready) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  -->
+</body>
+</html>
