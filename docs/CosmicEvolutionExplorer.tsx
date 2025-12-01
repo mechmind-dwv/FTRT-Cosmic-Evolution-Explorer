@@ -134,7 +134,7 @@ const CosmicEvolutionExplorer = () => {
     return Array.from({ length: 100 }, (_, i) => ({
       date: `2015-${String(Math.floor(i / 12) + 1).padStart(2, '0')}`,
       kpIndex: Math.random() * 9,
-      fieldStrength: 48000 + Math.sin(i / 20) * 2000 + Math.random() * 1000,
+      fieldStrength: 48000ftrt_cosmic_explorer. + Math.sin(i / 20) * 2000 + Math.random() * 1000,
       year: 2015 + Math.floor(i / 12)
     }));
   };
